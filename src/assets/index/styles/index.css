@@ -1,0 +1,344 @@
+
+.dislpayArrow a {
+  background: url(../images/icon_arrow.png) no-repeat 0 0;
+}
+
+.yyb2 {
+  display: block;
+  outline: none;
+  margin-left: 4px;
+  padding-top: 7px;
+  height: 20px;
+  float: left;
+}
+
+.yyb2_1 {
+  display: block;
+  outline: none;
+  padding-top: 1px;
+  width: 195px;
+  height: 30px;
+  float: left;
+  margin-left: 30px;
+}
+
+.yyb3 {
+  display: block;
+  outline: none;
+  margin-left: 4px;
+  padding-top: 7px;
+  width: 30px;
+  height: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.layer {
+  box-shadow: 0px 0px 5px rgba(76, 143, 188, 0.29);
+  float: left;
+}
+
+.tile__name {
+  /*background-image: url(../skin/default/tzt.png);*/
+  background-repeat: repeat-y;
+  background-position: left top;
+  padding-left: 10px;
+  font-family: '微软雅黑';
+  font-size: 10px;
+}
+
+.yyb5 {
+  width: 120px;
+  height: 100px;
+  float: left;
+  margin: 10px 5px 0px 5px;
+}
+
+.yyb5:hover {
+  cursor: pointer;
+  background-color: #F0F9FD;
+}
+
+.yyb5 dd {
+  width: 120px;
+  text-align: center;
+}
+
+.yyb5 dt {
+  width: 120px;
+  text-align: center;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+
+.yyb6 {
+  width: 120px;
+  height: 100px;
+  float: left;
+  margin: 10px 5px 0px 5px;
+  background-color: #F0F9FD;
+}
+
+.yyb6:hover {
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.yyb6 dd {
+  width: 120px;
+  text-align: center;
+}
+
+.yyb6 dt {
+  width: 120px;
+  text-align: center;
+  float: left;
+  height: 20px;
+  line-height: 20px;
+}
+
+/*室内外协同*1130修改/
+/*.yyb7{width:0;height:0;position:fixed;left:50%;rigth:50%;top:50%;bottom:50%;}*/
+/*.yyb8 {
+  padding: 15px;
+}
+
+!*.yyb8{width:680px; height:328px; margin-top:-159px; margin-left:-295px;}*!
+.yyb9 {
+  float: left;
+  margin: auto;
+  width: 280px;
+  height: 170px;
+  margin: 15px;
+  background: #f7ffff;
+  border-radius: 5px;
+  border: 1px #e4edea solid;
+}
+
+.yyb9:hover {
+  float: left;
+  margin: auto;
+  width: 280px;
+  height: 170px;
+  margin: 15px;
+  background: #f7ffff;
+  border-radius: 5px;
+  border: 1px #1e90e5 solid;
+}
+
+.yyb10 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px 16px 0px;
+}
+
+.yyb11 {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.yyb11 dt {
+  font-size: 14px;
+  font-family: '微软雅黑';
+  color: #313131;
+}
+
+.yyb11 dd {
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  font-family: '微软雅黑';
+  color: #577075;
+  background: #dee7f0;
+  border-radius: 0px 0px 5px 5px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.yyb11 dd img {
+  float: left;
+}
+
+.yyb11 dd a {
+  float: left;
+}*/
+
+.yyb14 {
+  float: left;
+  width: 30%;
+}
+
+/*返回按钮*/
+.yyb12 {
+  display: block;
+  float: left;
+  margin: 8px 4px 4px 10px;
+}
+
+/*查询面板*/
+.yyb13 {
+  display: block;
+  float: left;
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.yyb13 label {
+  display: block;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  float: left;
+  margin: 0px 0px 0px 0px;
+}
+
+.yyb13 input {
+  display: block;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  float: left;
+  margin: 8px 10px 0px 0px;
+}
+
+.yyb13 button {
+  display: block;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  float: left;
+  margin: 8px 10px 0px 0px;
+}
+
+.yyb13 select {
+  display: block;
+  font-size: 12px;
+  line-height: 40px;
+  text-align: left;
+  vertical-align: middle;
+  float: left;
+  margin: 8px 10px 0px 0px;
+}
+
+.yyb13 .btn {
+  display: block;
+  float: left;
+  margin: 8px 10px 0px 0px;
+}
+
+/*左侧表格*/
+.yyb16 {
+  height: 561px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.yyb16_2 {
+  height: 560px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.yyb16 td, .yyb16 th, .yyb16_2 td, .yyb16_2 th, .yyb16_3 td, .yyb16_3 th {
+  border-bottom: 1px solid #eaf7ff;
+  padding: 5px 8px;
+}
+
+.yybtable td, .yyb16 th, .yybtable td, .yybtable th, .yybtable td, .yybtable th {
+  border-bottom: 1px solid #eaf7ff;
+  padding: 5px 8px;
+}
+
+.yyb18 {
+  height: 593px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  -moz-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);
+  /*  background-image: url(../../../img/sgfx.png);*/
+}
+
+.yyb19 {
+  height: 593px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  -moz-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);
+  /*background-image: url(../../../img/xqfx.png);*/
+}
+
+.yyb20 {
+  height: 593px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  -moz-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);
+  /*background-image: url(../../../img/gtztfx1_1_1.png);*/
+  background-position: top left;
+}
+
+.yyb21 {
+  height: 593px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  -moz-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);
+  /* background-image: url(../../../img/gtztfx2.png);*/
+  background-position: top left;
+}
+
+.yyb22 {
+  height: 593px;
+  overflow: hidden;
+  -webkit-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  -moz-box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);;
+  box-shadow: inset 0 0 4px rgba(175, 191, 201, .5);
+  /*background-image: url(../../../img/gtztfx3.png);*/
+  background-position: top left;
+}
+
+#imageContainer {
+  width: 1366px;
+  height: 593px;;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+#imageContainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#imageContainer img.active {
+  z-index: 3;
+}
+
+.current {
+  background-color: #dbeaf4;
+}
+
+#content {
+  height: 593px;
+  width: 100%;
+}
+
+#content ul {
+  display: none;
+  width: 100%;
+  line-height: 593px;
+  height: 593px;
+}
+
+#aside{
+  border-right:rgba(30,144,229,1)
+}

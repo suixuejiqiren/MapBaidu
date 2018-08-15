@@ -1,0 +1,108 @@
+﻿
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #dbf2ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8fd7ff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0292fd;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #0292fd;
+}
+
+.Hui-aside::-webkit-scrollbar {
+  width: 2px;
+}
+
+.Hui-aside::-webkit-scrollbar-track {
+  background-color: #1e90e5;
+}
+
+.Hui-aside::-webkit-scrollbar-thumb {
+  background-color: #004da3;
+}
+
+.Hui-aside::-webkit-scrollbar-thumb:hover {
+  background-color: #004da3;
+}
+
+.Hui-aside::-webkit-scrollbar-thumb:active {
+  background-color: #004da3;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #eaf7ff;
+}
+
+.Huifold .item {
+  position: relative;
+}
+
+.Huifold .item h4 {
+  font-family: "微软雅黑";
+  margin: 0;
+  font-weight: bold;
+  position: relative;
+  border-top: 1px solid #fff;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px 10px;
+  background-color: #dbeaf4;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+.Huifold .item h4 b {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  right: 10px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #afbfc9;
+}
+
+.Huifold .item .info {
+  display: none;
+  padding: 10px;
+}
+
+.zdtab {
+  max-height: 540px;
+}
+
+@charset "utf-8";
+/* 你自己的样式 */
+/** {
+  text-decoration : none;
+  overflow-x: hidden;
+}*/
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+

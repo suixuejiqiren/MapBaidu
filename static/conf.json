@@ -1,0 +1,101 @@
+{
+  "appName": "网优平台3.0",
+  "webServer": "http://localhost:8500",
+  "NODE_ENV": "dev",
+  "nvaPageUrl":"http://localhost:8501/#/index",
+  "NODE_ENV": "prod",
+  "defaultMenuId": "1",
+  "page": {
+    "page_sizes": [
+      20,
+      50,
+      100
+    ]
+  },
+  "mock": {
+    "isMockMenu":true,
+    "menus": [
+      {
+        "resourceId": "1",
+        "orderNo": 1,
+        "resourceTitle": "参数查询",
+        "imageSource": "/static/images/menuIcons/dh_sjjs4.png",
+        "resourceValue": "http://10.221.33.175:8752/#/commandQuery",
+        "moduleId": 888888,
+        "subList": []
+      },
+      {
+        "resourceId": "pigeon-para-modify",
+        "orderNo": 2,
+        "resourceTitle": "参数修改",
+        "imageSource": "/static/images/menuIcons/dh_jzcs2.png",
+        "resourceValue": "http://10.221.33.175:8752/#/paraModify",
+        "moduleId": 888888,
+        "subList": []
+      },
+      {
+        "resourceId": "pigeon-lte-ext",
+        "orderNo": 3,
+        "resourceTitle": "基站软扩容",
+        "imageSource": "/static/images/menuIcons/dh_jzfx.png",
+        "resourceValue": "",
+        "moduleId": 888888,
+        "subList": [
+          {
+            "resourceId": "pigeon-lte-softExpansion",
+            "orderNo": 301,
+            "resourceTitle": "基站扩容",
+            "imageSource": "/static/images/menuIcons/dh_sjjs3.png",
+            "resourceValue": "http://10.221.33.175:8752/#/softExpansion",
+            "moduleId": 888888,
+            "subList": []
+          },{
+            "resourceId": "pigeon-lte-softExpansionHistory",
+            "orderNo": 302,
+            "resourceTitle": "历史查询",
+            "imageSource": "/static/images/menuIcons/dh_tyfw.png",
+            "resourceValue": "http://10.221.33.175:8752/#/softExpansionHistory",
+            "moduleId": 888888,
+            "subList": []
+          }
+        ]
+      },
+      {
+        "resourceId": "pigeon-lte-adj",
+        "orderNo": 4,
+        "resourceTitle": "邻区互操作",
+        "imageSource": "/static/images/menuIcons/dh_jzfx3.png",
+        "resourceValue": "",
+        "moduleId": 888888,
+        "subList": [
+          {
+            "resourceId": "pigeon-lte-tddOperation",
+            "orderNo": 401,
+            "resourceTitle": "执行",
+            "imageSource": "/static/images/menuIcons/dh_tyfw5.png",
+            "resourceValue": "http://10.221.33.175:8752/#/tddOperation",
+            "moduleId": 888888,
+            "subList": []
+          },{
+            "resourceId": "pigeon-lte-tddOperationHistory",
+            "orderNo": 402,
+            "resourceTitle": "历史查询",
+            "imageSource": "/static/images/menuIcons/dh_tyfw6.png",
+            "resourceValue": "http://10.221.33.175:8752/#/tddOperationHistory",
+            "moduleId": 888888,
+            "subList": []
+          }
+        ]
+      },
+      {
+        "resourceId": "pigeon-downtilt",
+        "orderNo": 5,
+        "resourceTitle": "天线电子倾角",
+        "imageSource": "/static/images/menuIcons/dh_jzgh.png",
+        "resourceValue": "http://10.221.33.175:8752/#/ElectronicAngle",
+        "moduleId": 888888,
+        "subList": []
+      }
+    ]
+  }
+}
