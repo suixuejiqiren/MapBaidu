@@ -20,7 +20,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import store from './store/store'
 
-Vue.use(ElementUI, {size: 'mini'})
+Vue.use(ElementUI)
 Vue.use(Util)
 
 //import Conf from './utils/conf'

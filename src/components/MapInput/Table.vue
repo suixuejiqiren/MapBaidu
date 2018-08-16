@@ -1,60 +1,68 @@
 <template>
   <el-table
-    :data="tableData3"
+    :data="fatherData"
     height="250"
     border
-    style="width: 100%">
+    style="width: 100%"
+    @row-click="rowClick"
+    @cell-click="cellClick"
+  >
     <el-table-column
-      prop="date"
-      label="日期"
+      fixed
+      prop="title"
+      label="地点"
       width="180">
     </el-table-column>
     <el-table-column
-      prop="name"
-      label="姓名"
+      prop="point.lat"
+      label="纬度"
       width="180">
     </el-table-column>
     <el-table-column
-      prop="address"
-      label="地址">
+      prop="point.lng"
+      label="经度">
+    </el-table-column>
+    <el-table-column
+      label="添加描述"
+      width="180">
+      <template slot-scope="scope">
+        <!--<el-button @click="handleClick(scope.row)" type="text" size="small">查看</el-button>-->
+        <!--<el-button type="text" size="small">编辑</el-button>-->
+        <el-input size="mini" v-model="scope.row.desc" placeholder="请输入内容"  v-if="scope.row.seen" @blur="loseFcous(scope.$index, scope.row) ">
+        </el-input>
+        <span v-else>{{scope.row.desc}}</span>
+      </template>
     </el-table-column>
   </el-table>
 </template>
 
 <script>
   export default {
+    name:"mapTable",
+    props:['fatherData'],
     data() {
       return {
-        tableData3: [{
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-08',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-06',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-07',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }]
       }
+    },
+    methods:{
+      loseFcous(index, row) {
+        // debugger
+        row.seen=false;
+      },
+      rowClick(row){
+        console.log(row)
+        this.$emit('transfer',row)
+      },
+      cellClick(row, cell,column){
+        // debugger
+        row.seen=true;
+        console.log(cell)
+      },
     }
   }
 </script>
+<style>
+  .displayInput{
+    visibility: hidden;
+  }
+</style>

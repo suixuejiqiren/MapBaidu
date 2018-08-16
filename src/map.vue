@@ -16,10 +16,11 @@
       </div>
 
       <div class="right">
-        <div class="item" v-for="item in searchArr"  @click="Drawing(item)">
-          <span class="list">{{item.title}}</span>
-          <span>{{item.centerLng}}&nbsp&nbsp&nbsp{{item.centerLat}}</span>
-        </div>
+        <!--<div class="item" v-for="item in searchArr"  @click="Drawing(item)">-->
+          <!--<span class="list">{{item.title}}</span>-->
+          <!--<span>{{item.centerLng}}&nbsp&nbsp&nbsp{{item.centerLat}}</span>-->
+        <!--</div>-->
+        <mapTable :fatherData="searchArr" @transfer="Drawing"></mapTable>
         <div id="r-result">
         </div>
       </div>
@@ -29,11 +30,13 @@
 <script type="text/ecmascript-6">
   import axios from 'axios'
   let axiosJsonp=require('axios-jsonp')
-  import mapInput from './components/MapInput/mapInput.vue';
+  import mapInput from './components/MapInput/mapInput.vue'
+  import mapTable from './components/MapInput/Table'
   export default {
     name: "resmap",
     components:{
-    mapInput
+    mapInput,
+    mapTable
   },
     data(){
       return {
@@ -94,7 +97,7 @@ methods:{
         let p=this.searchArr=[]
         let that=this
         // var list = []
-        // let num=0
+        let geonum=0
         var options = {
           onSearchComplete: function(results){
             // 判断状态是否正确
@@ -103,6 +106,10 @@ methods:{
               for (var i = 0; i < results.getCurrentNumPois(); i ++){
 
                 let contentCro=results.getPoi(i)
+                contentCro.desc=""
+                contentCro.add1=""
+                contentCro.add2=""
+                contentCro.seen=false
                 //根据uid请求Poi详细数据
                 axios({
                   url:"http://map.baidu.com/?reqflag=pcmap&from=webmap&qt=ext&uid=" +results.getPoi(i).uid + "&ext_ver=new&l=18",
@@ -131,6 +138,7 @@ methods:{
                 })
 
                 p.push(contentCro)
+
               }
               // console.log(that.searchArr)
               // that.searchArr.forEach(val=>{
@@ -166,6 +174,7 @@ methods:{
 
   //点击POI点事件
   Drawing(item){
+        // this.item=e
     var map = this.newMap
     var geoStr=item.geo
     map.clearOverlays();
@@ -225,9 +234,10 @@ methods:{
       // var centerStr=centerArr.join(',')
       // console.log(centerStr);
 
-    } else{
-      alert("该点没有范围")
     }
+    // else{
+    //   alert("该点没有范围")
+    // }
   }
 }
 

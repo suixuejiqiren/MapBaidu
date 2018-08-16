@@ -15,10 +15,14 @@ const routers = [
   {
     path: '/',
     meta: {
-      title: '登录'
+      title: '地图'
     },
     component: (resolve) => require(['./map'], resolve)
-  },
+  }
+  // {
+  //   path: '/table',
+  //   component: (resolve) => require(['./components/mapInput/Table'], resolve)
+  // }
 ]
 
 const router = new Router(
